@@ -1,0 +1,24 @@
+﻿  stdafx.cpp
+  SORT.cpp
+  SEARCH.cpp
+  RECORDSET.cpp
+  PHOTO.cpp
+f:\新建文件夹 (2)\综合实验四\mfc\photo.cpp(44): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+f:\新建文件夹 (2)\综合实验四\mfc\photo.cpp(45): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+f:\新建文件夹 (2)\综合实验四\mfc\photo.cpp(49): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+f:\新建文件夹 (2)\综合实验四\mfc\photo.cpp(55): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  MFCView.cpp
+f:\新建文件夹 (2)\综合实验四\mfc\mfcview.cpp(150): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+f:\新建文件夹 (2)\综合实验四\mfc\mfcview.cpp(151): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+f:\新建文件夹 (2)\综合实验四\mfc\mfcview.cpp(155): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+f:\新建文件夹 (2)\综合实验四\mfc\mfcview.cpp(161): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  MFCSet.cpp
+  MFCDoc.cpp
+  MFC.cpp
+  MainFrm.cpp
+  ALTER.cpp
+  ADD.cpp
+  正在生成代码...
+  LINK : 没有找到 F:\新建文件夹 (2)\综合实验四\Debug\MFC.exe 或上一个增量链接没有生成它；正在执行完全链接
+  MFC.vcxproj -> F:\新建文件夹 (2)\综合实验四\Debug\MFC.exe
+  MFC.vcxproj -> F:\新建文件夹 (2)\综合实验四\Debug\MFC.pdb (Partial PDB)

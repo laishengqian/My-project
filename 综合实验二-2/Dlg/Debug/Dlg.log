@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  DlgDlg.cpp
+c:\users\administrator\documents\visual studio 2015\projects\综合实验二-2\dlg\dlgdlg.cpp(163): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\综合实验二-2\dlg\dlgdlg.cpp(164): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\综合实验二-2\dlg\dlgdlg.cpp(168): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+c:\users\administrator\documents\visual studio 2015\projects\综合实验二-2\dlg\dlgdlg.cpp(174): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  Dlg.cpp
+  正在生成代码...
+  Dlg.vcxproj -> c:\users\administrator\documents\visual studio 2015\Projects\综合实验二-2\Debug\Dlg.exe
+  Dlg.vcxproj -> c:\users\administrator\documents\visual studio 2015\Projects\综合实验二-2\Debug\Dlg.pdb (Partial PDB)

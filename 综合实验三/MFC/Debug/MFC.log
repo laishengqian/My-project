@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  MFCView.cpp
+  MFCSet.cpp
+  MFCDoc.cpp
+  MFC.cpp
+  MainFrm.cpp
+  ADD.cpp
+  正在生成代码...
+  LINK : 没有找到 F:\新建文件夹 (2)\综合实验三\Debug\MFC.exe 或上一个增量链接没有生成它；正在执行完全链接
+  MFC.vcxproj -> F:\新建文件夹 (2)\综合实验三\Debug\MFC.exe
+  MFC.vcxproj -> F:\新建文件夹 (2)\综合实验三\Debug\MFC.pdb (Partial PDB)
