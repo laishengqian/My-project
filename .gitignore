@@ -34,3 +34,5 @@
 *.ncb
 *.db
 *.sdf
+/**/[Dd]ebug
+/**/ipch/*
