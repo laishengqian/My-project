@@ -13,7 +13,7 @@
 
 // CDB0505Set 实现
 
-// 代码生成在 2020年7月5日, 20:48
+// 代码生成在 2020年7月5日, 22:19
 
 IMPLEMENT_DYNAMIC(CDB0505Set, CRecordset)
 

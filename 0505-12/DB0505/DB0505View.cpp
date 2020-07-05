@@ -25,8 +25,10 @@ IMPLEMENT_DYNCREATE(CDB0505View, CRecordView)
 BEGIN_MESSAGE_MAP(CDB0505View, CRecordView)
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
-	ON_WM_PAINT()
-	
+	ON_BN_CLICKED(IDC_BUTTON1, &CDB0505View::OnBnClickedButton1)
+
+
+	ON_EN_CHANGE(IDC_EDIT3, &CDB0505View::OnEnChangeEdit3)
 END_MESSAGE_MAP()
 
 // CDB0505View 构造/析构
@@ -127,48 +129,54 @@ CRecordset* CDB0505View::OnGetRecordset()
 // CDB0505View 消息处理程序
 
 
-void CDB0505View::OnPaint()
+void CDB0505View::OnEnChangeEdit3()
+{
+	// TODO:  如果该控件是 RICHEDIT 控件，它将不
+	// 发送此通知，除非重写 CRecordView::OnInitDialog()
+	// 函数并调用 CRichEditCtrl().SetEventMask()，
+	// 同时将 ENM_CHANGE 标志“或”运算到掩码中。
+
+	// TODO:  在此添加控件通知处理程序代码
+}
+
+
+void CDB0505View::OnBnClickedButton1()
 {
 	// TODO: 在此添加控件通知处理程序代码
 
-	
-		
-		CImage img;
-		CString filename;
-		CString str1;
-		GetDlgItemText(IDC_EDIT7, str1);
-		filename = str1;
+	CImage img;
+	CString filename;
+	CString str1;
+	GetDlgItemText(IDC_EDIT7, str1);
+	filename = str1;
 
-		img.Load(filename);
-		int sx, sy, w, h;
-		CDC *pDC = GetDlgItem(IDC_STATIC)->GetDC();
+	img.Load(filename);
+	int sx, sy, w, h;
+	CDC *pDC = GetDlgItem(IDC_STATIC1)->GetDC();
 
-		CRect rect;
-		GetDlgItem(IDC_STATIC)->GetClientRect(&rect);
-		float rect_ratio = 1.0*rect.Width() / rect.Height();
-		float img_ratio = 1.0*img.GetWidth() / img.GetHeight();
-		if (rect_ratio > img_ratio)
-		{
-			h = rect.Height();
-			w = img_ratio*h;
-			sx = (rect.Width() - w) / 2;
-			sy = 0;
+	CRect rect;
+	GetDlgItem(IDC_STATIC1)->GetClientRect(&rect);
+	float rect_ratio = 1.0*rect.Width() / rect.Height();
+	float img_ratio = 1.0*img.GetWidth() / img.GetHeight();
+	if (rect_ratio > img_ratio)
+	{
+		h = rect.Height();
+		w = img_ratio*h;
+		sx = (rect.Width() - w) / 2;
+		sy = 0;
 
-		}
-		else
-		{
-			w = rect.Width();
-			h = w / img_ratio;
-			sx = 0;
-			sy = (rect.Height() - h) / 2;
-		}
+	}
+	else
+	{
+		w = rect.Width();
+		h = w / img_ratio;
+		sx = 0;
+		sy = (rect.Height() - h) / 2;
+	}
 
 
-		pDC->SetStretchBltMode(HALFTONE);//文件不失真
-		img.Draw(pDC->m_hDC, sx, sy, w, h);
-		ReleaseDC(pDC);
-
-	
+	pDC->SetStretchBltMode(HALFTONE);//文件不失真
+	img.Draw(pDC->m_hDC, sx, sy, w, h);
+	ReleaseDC(pDC);
 
 }
-

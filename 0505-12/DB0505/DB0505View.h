@@ -48,19 +48,17 @@ protected:
 	afx_msg void OnFilePrintPreview();
 	afx_msg void OnRButtonUp(UINT nFlags, CPoint point);
 	afx_msg void OnContextMenu(CWnd* pWnd, CPoint point);
-	afx_msg void OnPaint();
 	DECLARE_MESSAGE_MAP()
 public:
+	afx_msg void OnEnChangeEdit3();
+	void OnBnClickedButton1();
 	long ID;
 	CString number;
 	CString name;
 	CString sex;
 	CString age;
-protected:
 	CString phone;
-public:
 	CString photo;
-	afx_msg void OnBnClickedButton1();
 };
 
 #ifndef _DEBUG  // DB0505View.cpp 中的调试版本
