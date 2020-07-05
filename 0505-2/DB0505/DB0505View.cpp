@@ -25,7 +25,8 @@ IMPLEMENT_DYNCREATE(CDB0505View, CRecordView)
 BEGIN_MESSAGE_MAP(CDB0505View, CRecordView)
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
-	ON_BN_CLICKED(IDC_BUTTON1, &CDB0505View::OnBnClickedButton1)
+	ON_WM_PAINT()
+	
 END_MESSAGE_MAP()
 
 // CDB0505View 构造/析构
@@ -126,7 +127,7 @@ CRecordset* CDB0505View::OnGetRecordset()
 // CDB0505View 消息处理程序
 
 
-void CDB0505View::OnBnClickedButton1()
+void CDB0505View::OnPaint()
 {
 	// TODO: 在此添加控件通知处理程序代码
 
